@@ -1,0 +1,73 @@
+[0.015s] Invoking command in '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config': AMENT_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble /usr/bin/cmake /home/lenovo/temp_ws/src/moveit_resources_panda_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config
+[0.111s] -- The C compiler identification is GNU 11.4.0
+[0.198s] -- The CXX compiler identification is GNU 11.4.0
+[0.210s] -- Detecting C compiler ABI info
+[0.327s] -- Detecting C compiler ABI info - done
+[0.338s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.338s] -- Detecting C compile features
+[0.339s] -- Detecting C compile features - done
+[0.343s] -- Detecting CXX compiler ABI info
+[0.489s] -- Detecting CXX compiler ABI info - done
+[0.509s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.510s] -- Detecting CXX compile features
+[0.511s] -- Detecting CXX compile features - done
+[0.519s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.756s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.852s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.031s] -- Configuring done
+[1.035s] -- Generating done
+[1.037s] -- Build files have been written to: /home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config
+[1.044s] Invoked command in '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble /usr/bin/cmake /home/lenovo/temp_ws/src/moveit_resources_panda_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config
+[1.047s] Invoking command in '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config': AMENT_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble /usr/bin/cmake --build /home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config -- -j12 -l12
+[1.106s] Invoked command in '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble /usr/bin/cmake --build /home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config -- -j12 -l12
+[1.109s] Invoking command in '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config': AMENT_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble /usr/bin/cmake --install /home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config
+[1.120s] -- Install configuration: ""
+[1.121s] -- Execute custom install script
+[1.121s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/ament_index/resource_index/package_run_dependencies/moveit_resources_panda_moveit_config
+[1.121s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/ament_index/resource_index/parent_prefix_path/moveit_resources_panda_moveit_config
+[1.121s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/ament_prefix_path.sh
+[1.122s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/ament_prefix_path.dsv
+[1.122s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/path.sh
+[1.122s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/path.dsv
+[1.122s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.bash
+[1.123s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.sh
+[1.123s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.zsh
+[1.123s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.dsv
+[1.123s] -- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.dsv
+[1.140s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/ament_index/resource_index/packages/moveit_resources_panda_moveit_config
+[1.140s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/cmake/moveit_resources_panda_moveit_configConfig.cmake
+[1.140s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/cmake/moveit_resources_panda_moveit_configConfig-version.cmake
+[1.141s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.xml
+[1.141s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/demo.launch.py
+[1.142s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/full_simulation.launch.py
+[1.142s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/gazebo.launch.py
+[1.142s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/gazebo_simulation.launch.py
+[1.142s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/moveit.rviz
+[1.142s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/moveit_empty.rviz
+[1.143s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/moveit_rviz.launch.py
+[1.143s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/chomp_planning.yaml
+[1.143s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/gripper_moveit_controllers.yaml
+[1.144s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/hand.xacro
+[1.144s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/initial_positions.yaml
+[1.144s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/joint_limits.yaml
+[1.144s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/kinematics.yaml
+[1.144s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/lerp_planning.yaml
+[1.145s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/moveit_controllers.yaml
+[1.145s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/ompl_planning.yaml
+[1.145s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.ros2_control.xacro
+[1.145s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.srdf
+[1.146s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.urdf
+[1.146s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.urdf.xacro
+[1.146s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.xacro
+[1.146s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_arm.srdf.xacro
+[1.146s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_arm.xacro
+[1.147s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_arm_hand.srdf.xacro
+[1.147s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_hand.ros2_control.xacro
+[1.147s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/pilz_cartesian_limits.yaml
+[1.147s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/pilz_industrial_motion_planner_planning.yaml
+[1.147s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/ros2_controllers.yaml
+[1.147s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/sensors_kinect_depthmap.yaml
+[1.148s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/sensors_kinect_pointcloud.yaml
+[1.148s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/trajopt_planning.yaml
+[1.148s] -- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/.setup_assistant
+[1.151s] Invoked command in '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble /usr/bin/cmake --install /home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config

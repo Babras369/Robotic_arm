@@ -1,0 +1,1 @@
+/home/lenovo/temp_ws/src/moveit_resources_panda_moveit_config/launch/gazebo.launch.py

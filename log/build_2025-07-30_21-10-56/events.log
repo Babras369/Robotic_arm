@@ -1,0 +1,351 @@
+[0.000000] (-) TimerEvent: {}
+[0.000557] (moveit_resources_panda_description) JobQueued: {'identifier': 'moveit_resources_panda_description', 'dependencies': OrderedDict()}
+[0.000663] (moveit_resources_panda_moveit_config) JobQueued: {'identifier': 'moveit_resources_panda_moveit_config', 'dependencies': OrderedDict([('moveit_resources_panda_description', '/home/lenovo/temp_ws/install/moveit_resources_panda_description')])}
+[0.000728] (moveit_resources_panda_description) JobStarted: {'identifier': 'moveit_resources_panda_description'}
+[0.014334] (moveit_resources_panda_description) JobProgress: {'identifier': 'moveit_resources_panda_description', 'progress': 'cmake'}
+[0.015178] (moveit_resources_panda_description) JobProgress: {'identifier': 'moveit_resources_panda_description', 'progress': 'build'}
+[0.016063] (moveit_resources_panda_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lenovo/temp_ws/build/moveit_resources_panda_description', '--', '-j12', '-l12'], 'cwd': '/home/lenovo/temp_ws/build/moveit_resources_panda_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1641'), ('SYSTEMD_EXEC_PID', '1918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4938'), ('COLCON_PREFIX_PATH', '/home/lenovo/temp_ws/install:/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:11115'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1867,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1867'), ('INVOCATION_ID', '558aea7da367473a9eab79e294ef53c6'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:46aaaf23-cd32-4487-a21a-97ec6994cc14'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/temp_ws/build/moveit_resources_panda_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble')]), 'shell': False}
+[0.089803] (moveit_resources_panda_description) CommandEnded: {'returncode': 0}
+[0.091301] (moveit_resources_panda_description) JobProgress: {'identifier': 'moveit_resources_panda_description', 'progress': 'install'}
+[0.098610] (-) TimerEvent: {}
+[0.109416] (moveit_resources_panda_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lenovo/temp_ws/build/moveit_resources_panda_description'], 'cwd': '/home/lenovo/temp_ws/build/moveit_resources_panda_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1641'), ('SYSTEMD_EXEC_PID', '1918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4938'), ('COLCON_PREFIX_PATH', '/home/lenovo/temp_ws/install:/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:11115'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1867,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1867'), ('INVOCATION_ID', '558aea7da367473a9eab79e294ef53c6'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:46aaaf23-cd32-4487-a21a-97ec6994cc14'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/temp_ws/build/moveit_resources_panda_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble')]), 'shell': False}
+[0.122433] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.123354] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.124024] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.dsv\n'}
+[0.144231] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.sh\n'}
+[0.167383] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.dsv\n'}
+[0.189818] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.sh\n'}
+[0.198825] (-) TimerEvent: {}
+[0.207879] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig-version.cmake\n'}
+[0.227286] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig.cmake\n'}
+[0.246865] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/urdf/panda.urdf\n'}
+[0.247933] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/finger.stl\n'}
+[0.248303] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/hand.stl\n'}
+[0.248656] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link0.stl\n'}
+[0.248988] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link1.stl\n'}
+[0.249283] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link2.stl\n'}
+[0.249622] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link3.stl\n'}
+[0.249947] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link4.stl\n'}
+[0.250342] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link5.stl\n'}
+[0.250655] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link6.stl\n'}
+[0.250934] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link7.stl\n'}
+[0.251305] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/finger.dae\n'}
+[0.251894] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/hand.dae\n'}
+[0.252202] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link0.dae\n'}
+[0.252563] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link1.dae\n'}
+[0.252906] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link2.dae\n'}
+[0.253211] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link3.dae\n'}
+[0.253580] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link4.dae\n'}
+[0.253860] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link5.dae\n'}
+[0.254182] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link6.dae\n'}
+[0.254630] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link7.dae\n'}
+[0.255328] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/ament_index/resource_index/package_run_dependencies/moveit_resources_panda_description\n'}
+[0.256071] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/ament_index/resource_index/parent_prefix_path/moveit_resources_panda_description\n'}
+[0.256750] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.sh\n'}
+[0.280051] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.dsv\n'}
+[0.298991] (-) TimerEvent: {}
+[0.303369] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.sh\n'}
+[0.321285] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.dsv\n'}
+[0.339291] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.bash\n'}
+[0.339777] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.sh\n'}
+[0.340071] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.zsh\n'}
+[0.340335] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.dsv\n'}
+[0.340616] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.dsv\n'}
+[0.359497] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/ament_index/resource_index/packages/moveit_resources_panda_description\n'}
+[0.359863] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig.cmake\n'}
+[0.376890] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig-version.cmake\n'}
+[0.394075] (moveit_resources_panda_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.xml\n'}
+[0.399362] (-) TimerEvent: {}
+[0.400153] (moveit_resources_panda_description) CommandEnded: {'returncode': 0}
+[0.438618] (moveit_resources_panda_description) JobEnded: {'identifier': 'moveit_resources_panda_description', 'rc': 0}
+[0.439718] (moveit_resources_panda_moveit_config) JobStarted: {'identifier': 'moveit_resources_panda_moveit_config'}
+[0.455947] (moveit_resources_panda_moveit_config) JobProgress: {'identifier': 'moveit_resources_panda_moveit_config', 'progress': 'cmake'}
+[0.456935] (moveit_resources_panda_moveit_config) JobProgress: {'identifier': 'moveit_resources_panda_moveit_config', 'progress': 'build'}
+[0.458365] (moveit_resources_panda_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config', '--', '-j12', '-l12'], 'cwd': '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1641'), ('SYSTEMD_EXEC_PID', '1918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4938'), ('COLCON_PREFIX_PATH', '/home/lenovo/temp_ws/install:/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:11115'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1867,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1867'), ('INVOCATION_ID', '558aea7da367473a9eab79e294ef53c6'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:46aaaf23-cd32-4487-a21a-97ec6994cc14'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble')]), 'shell': False}
+[0.499583] (-) TimerEvent: {}
+[0.506937] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.599756] (-) TimerEvent: {}
+[0.700327] (-) TimerEvent: {}
+[0.704882] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.722819] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.778171] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.781993] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.790830] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.800452] (-) TimerEvent: {}
+[0.805397] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.823836] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.872000] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.873911] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900628] (-) TimerEvent: {}
+[1.001099] (-) TimerEvent: {}
+[1.062839] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.101332] (-) TimerEvent: {}
+[1.138280] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.182273] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[1.201533] (-) TimerEvent: {}
+[1.302064] (-) TimerEvent: {}
+[1.315412] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.339781] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Generating done\n'}
+[1.349015] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config\n'}
+[1.402275] (-) TimerEvent: {}
+[1.402946] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target panda_ik_node_cpp\x1b[0m\n'}
+[1.403234] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target panda_ik_node\x1b[0m\n'}
+[1.436787] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'[ 50%] Built target panda_ik_node\n'}
+[1.444783] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/panda_ik_node_cpp.dir/scripts/panda_ik_node_cpp.cpp.o\x1b[0m\n'}
+[1.502466] (-) TimerEvent: {}
+[1.603013] (-) TimerEvent: {}
+[1.703549] (-) TimerEvent: {}
+[1.803981] (-) TimerEvent: {}
+[1.904622] (-) TimerEvent: {}
+[2.005065] (-) TimerEvent: {}
+[2.105516] (-) TimerEvent: {}
+[2.205950] (-) TimerEvent: {}
+[2.306419] (-) TimerEvent: {}
+[2.406863] (-) TimerEvent: {}
+[2.507309] (-) TimerEvent: {}
+[2.607720] (-) TimerEvent: {}
+[2.708163] (-) TimerEvent: {}
+[2.808643] (-) TimerEvent: {}
+[2.909080] (-) TimerEvent: {}
+[3.009554] (-) TimerEvent: {}
+[3.110005] (-) TimerEvent: {}
+[3.210461] (-) TimerEvent: {}
+[3.310915] (-) TimerEvent: {}
+[3.411355] (-) TimerEvent: {}
+[3.511804] (-) TimerEvent: {}
+[3.612278] (-) TimerEvent: {}
+[3.712740] (-) TimerEvent: {}
+[3.813227] (-) TimerEvent: {}
+[3.913687] (-) TimerEvent: {}
+[4.014127] (-) TimerEvent: {}
+[4.114619] (-) TimerEvent: {}
+[4.215077] (-) TimerEvent: {}
+[4.315526] (-) TimerEvent: {}
+[4.415982] (-) TimerEvent: {}
+[4.516461] (-) TimerEvent: {}
+[4.616891] (-) TimerEvent: {}
+[4.717342] (-) TimerEvent: {}
+[4.817804] (-) TimerEvent: {}
+[4.918276] (-) TimerEvent: {}
+[5.018729] (-) TimerEvent: {}
+[5.119332] (-) TimerEvent: {}
+[5.219755] (-) TimerEvent: {}
+[5.320242] (-) TimerEvent: {}
+[5.420691] (-) TimerEvent: {}
+[5.521113] (-) TimerEvent: {}
+[5.621593] (-) TimerEvent: {}
+[5.722043] (-) TimerEvent: {}
+[5.822534] (-) TimerEvent: {}
+[5.922984] (-) TimerEvent: {}
+[6.023469] (-) TimerEvent: {}
+[6.123919] (-) TimerEvent: {}
+[6.224393] (-) TimerEvent: {}
+[6.324839] (-) TimerEvent: {}
+[6.425286] (-) TimerEvent: {}
+[6.525738] (-) TimerEvent: {}
+[6.626187] (-) TimerEvent: {}
+[6.726662] (-) TimerEvent: {}
+[6.827299] (-) TimerEvent: {}
+[6.927764] (-) TimerEvent: {}
+[7.028237] (-) TimerEvent: {}
+[7.128687] (-) TimerEvent: {}
+[7.229137] (-) TimerEvent: {}
+[7.329651] (-) TimerEvent: {}
+[7.430109] (-) TimerEvent: {}
+[7.530583] (-) TimerEvent: {}
+[7.631210] (-) TimerEvent: {}
+[7.731673] (-) TimerEvent: {}
+[7.832115] (-) TimerEvent: {}
+[7.932594] (-) TimerEvent: {}
+[8.033050] (-) TimerEvent: {}
+[8.133522] (-) TimerEvent: {}
+[8.233970] (-) TimerEvent: {}
+[8.334420] (-) TimerEvent: {}
+[8.434934] (-) TimerEvent: {}
+[8.535412] (-) TimerEvent: {}
+[8.635862] (-) TimerEvent: {}
+[8.736309] (-) TimerEvent: {}
+[8.836752] (-) TimerEvent: {}
+[8.937232] (-) TimerEvent: {}
+[9.037991] (-) TimerEvent: {}
+[9.138481] (-) TimerEvent: {}
+[9.238942] (-) TimerEvent: {}
+[9.339431] (-) TimerEvent: {}
+[9.439874] (-) TimerEvent: {}
+[9.540302] (-) TimerEvent: {}
+[9.640729] (-) TimerEvent: {}
+[9.741271] (-) TimerEvent: {}
+[9.841706] (-) TimerEvent: {}
+[9.942148] (-) TimerEvent: {}
+[10.042611] (-) TimerEvent: {}
+[10.143051] (-) TimerEvent: {}
+[10.243519] (-) TimerEvent: {}
+[10.343956] (-) TimerEvent: {}
+[10.444438] (-) TimerEvent: {}
+[10.544875] (-) TimerEvent: {}
+[10.645317] (-) TimerEvent: {}
+[10.745754] (-) TimerEvent: {}
+[10.846230] (-) TimerEvent: {}
+[10.946677] (-) TimerEvent: {}
+[11.047123] (-) TimerEvent: {}
+[11.147603] (-) TimerEvent: {}
+[11.248048] (-) TimerEvent: {}
+[11.348526] (-) TimerEvent: {}
+[11.449107] (-) TimerEvent: {}
+[11.549537] (-) TimerEvent: {}
+[11.649942] (-) TimerEvent: {}
+[11.750340] (-) TimerEvent: {}
+[11.850738] (-) TimerEvent: {}
+[11.951152] (-) TimerEvent: {}
+[12.051629] (-) TimerEvent: {}
+[12.152068] (-) TimerEvent: {}
+[12.252542] (-) TimerEvent: {}
+[12.352996] (-) TimerEvent: {}
+[12.453465] (-) TimerEvent: {}
+[12.553866] (-) TimerEvent: {}
+[12.654286] (-) TimerEvent: {}
+[12.754705] (-) TimerEvent: {}
+[12.855152] (-) TimerEvent: {}
+[12.955597] (-) TimerEvent: {}
+[13.056076] (-) TimerEvent: {}
+[13.156553] (-) TimerEvent: {}
+[13.256974] (-) TimerEvent: {}
+[13.357402] (-) TimerEvent: {}
+[13.457825] (-) TimerEvent: {}
+[13.558278] (-) TimerEvent: {}
+[13.658694] (-) TimerEvent: {}
+[13.759108] (-) TimerEvent: {}
+[13.859553] (-) TimerEvent: {}
+[13.959998] (-) TimerEvent: {}
+[14.060472] (-) TimerEvent: {}
+[14.160915] (-) TimerEvent: {}
+[14.261376] (-) TimerEvent: {}
+[14.361820] (-) TimerEvent: {}
+[14.462287] (-) TimerEvent: {}
+[14.562738] (-) TimerEvent: {}
+[14.663177] (-) TimerEvent: {}
+[14.763630] (-) TimerEvent: {}
+[14.864082] (-) TimerEvent: {}
+[14.964560] (-) TimerEvent: {}
+[15.064993] (-) TimerEvent: {}
+[15.165396] (-) TimerEvent: {}
+[15.265784] (-) TimerEvent: {}
+[15.366181] (-) TimerEvent: {}
+[15.466589] (-) TimerEvent: {}
+[15.566978] (-) TimerEvent: {}
+[15.667392] (-) TimerEvent: {}
+[15.767782] (-) TimerEvent: {}
+[15.868177] (-) TimerEvent: {}
+[15.968589] (-) TimerEvent: {}
+[16.068971] (-) TimerEvent: {}
+[16.169363] (-) TimerEvent: {}
+[16.269751] (-) TimerEvent: {}
+[16.370134] (-) TimerEvent: {}
+[16.470539] (-) TimerEvent: {}
+[16.570929] (-) TimerEvent: {}
+[16.671315] (-) TimerEvent: {}
+[16.771716] (-) TimerEvent: {}
+[16.872271] (-) TimerEvent: {}
+[16.972668] (-) TimerEvent: {}
+[17.073057] (-) TimerEvent: {}
+[17.173484] (-) TimerEvent: {}
+[17.273873] (-) TimerEvent: {}
+[17.374268] (-) TimerEvent: {}
+[17.474664] (-) TimerEvent: {}
+[17.575063] (-) TimerEvent: {}
+[17.675483] (-) TimerEvent: {}
+[17.775874] (-) TimerEvent: {}
+[17.876266] (-) TimerEvent: {}
+[17.976664] (-) TimerEvent: {}
+[18.077047] (-) TimerEvent: {}
+[18.177458] (-) TimerEvent: {}
+[18.277937] (-) TimerEvent: {}
+[18.378325] (-) TimerEvent: {}
+[18.478709] (-) TimerEvent: {}
+[18.579099] (-) TimerEvent: {}
+[18.679523] (-) TimerEvent: {}
+[18.779910] (-) TimerEvent: {}
+[18.880299] (-) TimerEvent: {}
+[18.980692] (-) TimerEvent: {}
+[19.081249] (-) TimerEvent: {}
+[19.181627] (-) TimerEvent: {}
+[19.282002] (-) TimerEvent: {}
+[19.382432] (-) TimerEvent: {}
+[19.482857] (-) TimerEvent: {}
+[19.583305] (-) TimerEvent: {}
+[19.683796] (-) TimerEvent: {}
+[19.784271] (-) TimerEvent: {}
+[19.884718] (-) TimerEvent: {}
+[19.985171] (-) TimerEvent: {}
+[20.085667] (-) TimerEvent: {}
+[20.186072] (-) TimerEvent: {}
+[20.286489] (-) TimerEvent: {}
+[20.386875] (-) TimerEvent: {}
+[20.401477] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable panda_ik_node_cpp\x1b[0m\n'}
+[20.487045] (-) TimerEvent: {}
+[20.587561] (-) TimerEvent: {}
+[20.688064] (-) TimerEvent: {}
+[20.788601] (-) TimerEvent: {}
+[20.889052] (-) TimerEvent: {}
+[20.989505] (-) TimerEvent: {}
+[21.089917] (-) TimerEvent: {}
+[21.190321] (-) TimerEvent: {}
+[21.290693] (-) TimerEvent: {}
+[21.308898] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'[100%] Built target panda_ik_node_cpp\n'}
+[21.323714] (moveit_resources_panda_moveit_config) CommandEnded: {'returncode': 0}
+[21.324459] (moveit_resources_panda_moveit_config) JobProgress: {'identifier': 'moveit_resources_panda_moveit_config', 'progress': 'install'}
+[21.324677] (moveit_resources_panda_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config'], 'cwd': '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1641'), ('SYSTEMD_EXEC_PID', '1918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4938'), ('COLCON_PREFIX_PATH', '/home/lenovo/temp_ws/install:/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:11115'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1867,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1867'), ('INVOCATION_ID', '558aea7da367473a9eab79e294ef53c6'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:46aaaf23-cd32-4487-a21a-97ec6994cc14'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/temp_ws/install/moveit_resources_panda_description:/home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config:/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble')]), 'shell': False}
+[21.332638] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.333049] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[21.333419] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/ament_index/resource_index/package_run_dependencies/moveit_resources_panda_moveit_config\n'}
+[21.333713] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/ament_index/resource_index/parent_prefix_path/moveit_resources_panda_moveit_config\n'}
+[21.333885] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/ament_prefix_path.sh\n'}
+[21.334153] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/ament_prefix_path.dsv\n'}
+[21.334357] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/path.sh\n'}
+[21.334551] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/environment/path.dsv\n'}
+[21.334710] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.bash\n'}
+[21.334928] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.sh\n'}
+[21.335312] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.zsh\n'}
+[21.335652] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/local_setup.dsv\n'}
+[21.335879] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.dsv\n'}
+[21.347003] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/ament_index/resource_index/packages/moveit_resources_panda_moveit_config\n'}
+[21.347359] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/cmake/moveit_resources_panda_moveit_configConfig.cmake\n'}
+[21.347637] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/cmake/moveit_resources_panda_moveit_configConfig-version.cmake\n'}
+[21.347804] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.xml\n'}
+[21.348088] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/demo.launch.py\n'}
+[21.348276] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/full_simulation.launch.py\n'}
+[21.348445] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/gazebo.launch.py\n'}
+[21.348710] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/gazebo_simulation.launch.py\n'}
+[21.348910] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/moveit.rviz\n'}
+[21.349091] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/moveit_empty.rviz\n'}
+[21.349331] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/launch/moveit_rviz.launch.py\n'}
+[21.349506] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/chomp_planning.yaml\n'}
+[21.349659] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/gripper_moveit_controllers.yaml\n'}
+[21.349813] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/hand.xacro\n'}
+[21.349967] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/initial_positions.yaml\n'}
+[21.350145] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/joint_limits.yaml\n'}
+[21.350417] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/kinematics.yaml\n'}
+[21.350578] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/lerp_planning.yaml\n'}
+[21.350813] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/moveit_controllers.yaml\n'}
+[21.350975] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/ompl_planning.yaml\n'}
+[21.351129] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.ros2_control.xacro\n'}
+[21.351319] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.srdf\n'}
+[21.351477] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.urdf\n'}
+[21.351628] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.urdf.xacro\n'}
+[21.351780] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda.xacro\n'}
+[21.351930] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_arm.srdf.xacro\n'}
+[21.352082] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_arm.xacro\n'}
+[21.352255] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_arm_hand.srdf.xacro\n'}
+[21.352422] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/panda_hand.ros2_control.xacro\n'}
+[21.352575] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[21.352846] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/pilz_industrial_motion_planner_planning.yaml\n'}
+[21.353003] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/ros2_controllers.yaml\n'}
+[21.353173] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/sensors_kinect_depthmap.yaml\n'}
+[21.353670] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/sensors_kinect_pointcloud.yaml\n'}
+[21.353845] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/config/trajopt_planning.yaml\n'}
+[21.354002] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/.setup_assistant\n'}
+[21.354158] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/lib/moveit_resources_panda_moveit_config/panda_ik_node\n'}
+[21.354550] (moveit_resources_panda_moveit_config) StdoutLine: {'line': b'-- Up-to-date symlink: /home/lenovo/temp_ws/install/moveit_resources_panda_moveit_config/lib/moveit_resources_panda_moveit_config/panda_ik_node_cpp\n'}
+[21.355366] (moveit_resources_panda_moveit_config) CommandEnded: {'returncode': 0}
+[21.380251] (moveit_resources_panda_moveit_config) JobEnded: {'identifier': 'moveit_resources_panda_moveit_config', 'rc': 0}
+[21.381362] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/lenovo/temp_ws/src/moveit_resources_panda_moveit_config/scripts/panda_ik_node.cpp: No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/panda_ik_node.dir/build.make:76: CMakeFiles/panda_ik_node.dir/scripts/panda_ik_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/panda_ik_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

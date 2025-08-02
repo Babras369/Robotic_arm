@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-30cbf3f683a5a0c902bd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "moveit_resources_panda_moveit_config",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "moveit_resources_panda_moveit_config_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-moveit_resources_panda_moveit_config_uninstall-f96b3ff2f328c2faef3c.json",
+					"name" : "moveit_resources_panda_moveit_config_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "panda_fk_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-panda_fk_node-1afacd3d284e78ff21c5.json",
+					"name" : "panda_fk_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "panda_ik_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-panda_ik_node-5aa2e4092fca09472206.json",
+					"name" : "panda_ik_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4ad6588899960143b986.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config",
+		"source" : "/home/lenovo/temp_ws/src/moveit_resources_panda_moveit_config"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

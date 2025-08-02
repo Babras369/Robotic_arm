@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/lenovo/temp_ws/build/moveit_resources_panda_moveit_config/panda_fk_node" "TARGETS" "panda_fk_node" "DESTINATION" "lib/moveit_resources_panda_moveit_config")

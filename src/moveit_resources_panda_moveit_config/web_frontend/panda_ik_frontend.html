@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panda FK Control Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(255, 255, 255, 0.1) 2px,
+                rgba(255, 255, 255, 0.1) 4px
+            );
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .header h2 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .robot-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .controls-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .joint-control {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
+            border-radius: 12px;
+            border: 1px solid rgba(79, 172, 254, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .joint-control:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(79, 172, 254, 0.3);
+        }
+
+        .joint-control::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .joint-label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .joint-number {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type=number] {
+            width: 100px;
+            padding: 10px 15px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        input[type=number]:focus {
+            outline: none;
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+        }
+
+        .range-info {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            background: rgba(127, 140, 141, 0.1);
+            padding: 5px 10px;
+            border-radius: 15px;
+            flex: 1;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #8b4513;
+        }
+
+        .preset-section {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px solid rgba(79, 172, 254, 0.1);
+        }
+
+        .preset-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .preset-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .btn-preset {
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            border-radius: 10px;
+        }
+
+        .btn-ready {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #2d5016;
+        }
+
+        .btn-extended {
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+            color: #5d4037;
+        }
+
+        .btn-transport {
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            color: #1565c0;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .status.show {
+            opacity: 1;
+        }
+
+        .status.success {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #2d5016;
+        }
+
+        .status.error {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #8b0000;
+        }
+
+        .info-panel {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .info-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .joint-range {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            margin: 8px 0;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
+            border-radius: 8px;
+            border-left: 4px solid #4facfe;
+        }
+
+        .joint-range:nth-child(even) {
+            background: linear-gradient(135deg, #fff8f0 0%, #ffe8d0 100%);
+            border-left-color: #ff9500;
+        }
+
+        .initial-pos {
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0fff0 100%);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .initial-title {
+            font-weight: 600;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(79, 172, 254, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(79, 172, 254, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(79, 172, 254, 0); }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+            
+            .header h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="robot-icon">🤖</div>
+            <h2>Panda FK Control Panel</h2>
+        </div>
+        
+        <div class="main-content">
+            <div class="controls-section">
+                <form id="fk-form">
+                    <div class="joint-control">
+                        <div class="joint-label">
+                            <div class="joint-number">1</div>
+                            Joint 1
+                        </div>
+                        <div class="input-group">
+                            <input type="number" step="0.01" id="fk_joint1" value="30.0" min="-170.0" max="170.0">
+                            <div class="range-info">-170.0° to 170.0°</div>
+                        </div>
+                    </div>
+
+                    <div class="joint-control">
+                        <div class="joint-label">
+                            <div class="joint-number">2</div>
+                            Joint 2
+                        </div>
+                        <div class="input-group">
+                            <input type="number" step="0.01" id="fk_joint2" value="-45.0" min="-98.0" max="98.0">
+                            <div class="range-info">-98.0° to 98.0°</div>
+                        </div>
+                    </div>
+
+                    <div class="joint-control">
+                        <div class="joint-label">
+                            <div class="joint-number">3</div>
+                            Joint 3
+                        </div>
+                        <div class="input-group">
+                            <input type="number" step="0.01" id="fk_joint3" value="20.0" min="-170.0" max="170.0">
+                            <div class="range-info">-170.0° to 170.0°</div>
+                        </div>
+                    </div>
+
+                    <div class="joint-control">
+                        <div class="joint-label">
+                            <div class="joint-number">4</div>
+                            Joint 4
+                        </div>
+                        <div class="input-group">
+                            <input type="number" step="0.01" id="fk_joint4" value="-60.0" min="-175.0" max="-5.0">
+                            <div class="range-info">-175.0° to -5.0°</div>
+                        </div>
+                    </div>
+
+                    <div class="joint-control">
+                        <div class="joint-label">
+                            <div class="joint-number">5</div>
+                            Joint 5
+                        </div>
+                        <div class="input-group">
+                            <input type="number" step="0.01" id="fk_joint5" value="45.0" min="-170.0" max="170.0">
+                            <div class="range-info">-170.0° to 170.0°</div>
+                        </div>
+                    </div>
+
+                    <div class="joint-control">
+                        <div class="joint-label">
+                            <div class="joint-number">6</div>
+                            Joint 6
+                        </div>
+                        <div class="input-group">
+                            <input type="number" step="0.01" id="fk_joint6" value="10.0" min="-5.0" max="215.0">
+                            <div class="range-info">-5.0° to 215.0°</div>
+                        </div>
+                    </div>
+
+                    <div class="joint-control">
+                        <div class="joint-label">
+                            <div class="joint-number">7</div>
+                            Joint 7
+                        </div>
+                        <div class="input-group">
+                            <input type="number" step="0.01" id="fk_joint7" value="0.0" min="-170.0" max="170.0">
+                            <div class="range-info">-170.0° to 170.0°</div>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="btn btn-primary" onclick="sendFKParams()">
+                            🔄 Update FK Parameters
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="goToInitial()">
+                            🏠 Go to Initial Position
+                        </button>
+                    </div>
+
+                    <div class="preset-section">
+                        <h3 class="preset-title">🎯 Preset Positions</h3>
+                        <div class="preset-buttons">
+                            <button type="button" class="btn btn-preset btn-ready" onclick="goToReady()">
+                                ⚡ Ready Position
+                            </button>
+                            <button type="button" class="btn btn-preset btn-extended" onclick="goToExtended()">
+                                📏 Extended Position
+                            </button>
+                            <button type="button" class="btn btn-preset btn-transport" onclick="goToTransport()">
+                                📦 Transport Position
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div id="status" class="status"></div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-title">
+                    📊 Joint Information
+                </div>
+                
+                <div class="joint-range">
+                    <strong>Joint 1:</strong>
+                    <span>-170.0° to 170.0°</span>
+                </div>
+                <div class="joint-range">
+                    <strong>Joint 2:</strong>
+                    <span>-98.0° to 98.0°</span>
+                </div>
+                <div class="joint-range">
+                    <strong>Joint 3:</strong>
+                    <span>-170.0° to 170.0°</span>
+                </div>
+                <div class="joint-range">
+                    <strong>Joint 4:</strong>
+                    <span>-175.0° to -5.0°</span>
+                </div>
+                <div class="joint-range">
+                    <strong>Joint 5:</strong>
+                    <span>-170.0° to 170.0°</span>
+                </div>
+                <div class="joint-range">
+                    <strong>Joint 6:</strong>
+                    <span>-5.0° to 215.0°</span>
+                </div>
+                <div class="joint-range">
+                    <strong>Joint 7:</strong>
+                    <span>-170.0° to 170.0°</span>
+                </div>
+
+                <div class="initial-pos">
+                    <div class="initial-title">🎯 Preset Positions</div>
+                    <div><strong>Ready:</strong> J1: 0°, J2: -45°, J3: 0°, J4: -135°, J5: 0°, J6: 90°, J7: 45°</div>
+                    <div><strong>Extended:</strong> J1: 0°, J2: 0°, J3: 0°, J4: 0°, J5: 0°, J6: 90°, J7: 45°</div>
+                    <div><strong>Transport:</strong> J1: 0°, J2: -32°, J3: 0°, J4: -170°, J5: 0°, J6: 0°, J7: 45°</div>
+                </div>
+
+                <div class="initial-pos">
+                    <div class="initial-title">🏠 Initial Position</div>
+                    <div>J1: 30.0°, J2: -45.0°, J3: 20.0°, J4: -60.0°</div>
+                    <div>J5: 45.0°, J6: 10.0°, J7: 0.0°</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const BACKEND_URL = 'http://localhost:5000/set_param';
+        
+        async function sendFKParams() {
+            const btn = document.querySelector('.btn-primary');
+            btn.classList.add('pulse');
+            
+            const joints = [
+                document.getElementById('fk_joint1').value,
+                document.getElementById('fk_joint2').value,
+                document.getElementById('fk_joint3').value,
+                document.getElementById('fk_joint4').value,
+                document.getElementById('fk_joint5').value,
+                document.getElementById('fk_joint6').value,
+                document.getElementById('fk_joint7').value
+            ];
+            let success = true;
+            for (let i = 0; i < joints.length; i++) {
+                try {
+                    const response = await fetch(BACKEND_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name: `fk_joint${i+1}`, value: joints[i] })
+                    });
+                    if (!response.ok) success = false;
+                } catch (err) {
+                    success = false;
+                }
+            }
+            
+            const status = document.getElementById('status');
+            status.className = `status show ${success ? 'success' : 'error'}`;
+            status.innerText = success ? '✅ FK Joint Angles updated!' : '❌ Error updating FK Joint Angles!';
+            
+            btn.classList.remove('pulse');
+            
+            setTimeout(() => {
+                status.classList.remove('show');
+            }, 3000);
+        }
+        
+        async function goToInitial() {
+            const btn = document.querySelector('.btn-secondary');
+            btn.classList.add('pulse');
+            
+            const initial = [30.0, -45.0, 20.0, -60.0, 45.0, 10.0, 0.0];
+            let success = true;
+            for (let i = 0; i < initial.length; i++) {
+                document.getElementById(`fk_joint${i+1}`).value = initial[i];
+                try {
+                    const response = await fetch(BACKEND_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name: `fk_joint${i+1}`, value: initial[i] })
+                    });
+                    if (!response.ok) success = false;
+                } catch (err) {
+                    success = false;
+                }
+            }
+            
+            const status = document.getElementById('status');
+            status.className = `status show ${success ? 'success' : 'error'}`;
+            status.innerText = success ? '🏠 Robot sent to initial position!' : '❌ Error sending robot to initial position!';
+            
+            btn.classList.remove('pulse');
+            
+            setTimeout(() => {
+                status.classList.remove('show');
+            }, 3000);
+        }
+
+        async function goToReady() {
+            const btn = document.querySelector('.btn-ready');
+            btn.classList.add('pulse');
+            
+            // Convert radians to degrees: ready position values from SRDF
+            // J1: 0, J2: -0.785 (-45°), J3: 0, J4: -2.356 (-135°), J5: 0, J6: 1.571 (90°), J7: 0.785 (45°)
+            const ready = [0.0, -45.0, 0.0, -135.0, 0.0, 90.0, 45.0];
+            let success = await setJointAngles(ready, 'Ready Position');
+            
+            btn.classList.remove('pulse');
+            showStatus(success, '⚡ Robot moved to Ready position!', '❌ Error moving to Ready position!');
+        }
+
+        async function goToExtended() {
+            const btn = document.querySelector('.btn-extended');
+            btn.classList.add('pulse');
+            
+            // Convert radians to degrees: extended position values from SRDF
+            // J1: 0, J2: 0, J3: 0, J4: 0, J5: 0, J6: 1.571 (90°), J7: 0.785 (45°)
+            const extended = [0.0, 0.0, 0.0, 0.0, 0.0, 90.0, 45.0];
+            let success = await setJointAngles(extended, 'Extended Position');
+            
+            btn.classList.remove('pulse');
+            showStatus(success, '📏 Robot moved to Extended position!', '❌ Error moving to Extended position!');
+        }
+
+        async function goToTransport() {
+            const btn = document.querySelector('.btn-transport');
+            btn.classList.add('pulse');
+            
+            // Convert radians to degrees: transport position values from SRDF
+            // J1: 0, J2: -0.5599 (-32°), J3: 0, J4: -2.97 (-170°), J5: 0, J6: 0, J7: 0.785 (45°)
+            const transport = [0.0, -32.0, 0.0, -170.0, 0.0, 0.0, 45.0];
+            let success = await setJointAngles(transport, 'Transport Position');
+            
+            btn.classList.remove('pulse');
+            showStatus(success, '📦 Robot moved to Transport position!', '❌ Error moving to Transport position!');
+        }
+
+        async function setJointAngles(angles, positionName) {
+            let success = true;
+            for (let i = 0; i < angles.length; i++) {
+                document.getElementById(`fk_joint${i+1}`).value = angles[i];
+                try {
+                    const response = await fetch(BACKEND_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name: `fk_joint${i+1}`, value: angles[i] })
+                    });
+                    if (!response.ok) success = false;
+                } catch (err) {
+                    success = false;
+                }
+            }
+            return success;
+        }
+
+        function showStatus(success, successMsg, errorMsg) {
+            const status = document.getElementById('status');
+            status.className = `status show ${success ? 'success' : 'error'}`;
+            status.innerText = success ? successMsg : errorMsg;
+            
+            setTimeout(() => {
+                status.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
