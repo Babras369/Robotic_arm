@@ -489,7 +489,7 @@ ros2 param set /move_group/ompl_planning_time 2.0
 
 ### Web Architecture
 - **Backend**: Flask REST API for parameter control
-- **Frontend**: Modern HTML/CSS/JavaScript interface
+- **Frontend**: HTML interface
 - **Communication**: HTTP POST requests for parameter updates
 - **Security**: Parameter validation and type checking
 
